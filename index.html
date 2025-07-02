@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Inicio - La cocina de Guille</title>
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <!-- Inicio de la navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <img src="./assetsProyecto/guille.png" alt="Logo" class="logo--image">
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler button--vermas" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Links del menú -->
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar--listado  ">
+                        <li class="li-nav ">
+                            <a href="#" class="li-link nav-link active">Inicio</a>
+                        </li>
+                        <li class="li-nav nav-item">
+                            <a href="./pages/postres.html" class="li-link nav-link active"
+                                aria-current="page">Dulce </a>
+                        </li>
+                        <li class="li-nav nav-item">
+                            <a href="#" class="li-link nav-link active"
+                                aria-current="page">Salado</a>
+                        </li>
+                        <li class="li-nav nav-item">
+                            <a href="./pages/quienes-somos.html" class="li-link nav-link active"
+                                aria-current="page">Contacto</a>
+                        </li>
+                        <li class="li-nav nav-item">
+                            <a href="./pages/quienes-somos.html" class="li-link nav-link active"
+                                aria-current="page">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!-- Búsqueda -->
+                    <form class="d-flex contenedor-nav-search" role="search">
+                        <input class="form-control me-2 d-flex nav-search" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success button--vermas" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- secondary nav -->
+        <nav class="navbar navbar-light bg-light justify-content-center d-flex secondarynav--image">
+            <a class="navbar-brand secondarynav--texto">¿Qué querés comer hoy?</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 d-flex nav-search" type="search" placeholder="Search"
+                    aria-label="Search" />
+            </form>
+        </nav>
+
+    </header>
+
+
+    <!-- Comienzo del main -->
+
+    <main>
+        <div class="presentacion">
+            <div class="presentacion--title">
+                <h1>
+                    La cocina de Guille
+                </h1>
+                <h2>
+                    Caterers & Private Cheff
+                </h2>
+                <div class="presentacion--button">
+                    <a href="/pages/quienes-somos.html" class="button button--quienessomos">Quiénes somos</a>
+                </div>
+            </div>
+            <div class="presentacion--image-container">
+                <img src="./assetsProyecto/amasado.png" alt="amasado de masa" class="presentacion--image">
+            </div>
+        </div>
+
+        <!-- Primer bloque de 3 cards de Dulces -->
+
+
+
+        <section class="category-block">
+
+            <div class="recipe-title">
+                <h2 class="recipe-title__inicio">Postres</h2>
+            </div>
+
+            <div class="cards-container">
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/melopita.png" alt="Melopita, un dulce griego con alma casera"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Melopita</h3>
+                        <p class="recipe-card__description">Un dulce griego con alma casera</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/Makroud.png" alt="Makroud, dulce tradicional del Magreb"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Makroud</h3>
+                        <p class="recipe-card__description">Tradición dulce del Magreb</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/kunefe.png" alt="Künefe, postre crujiente del Medio Oriente"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Künefe</h3>
+                        <p class="recipe-card__description">Un crujiente tesoro del Medio Oriente</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="button-container">
+                <a href="./pages/postres.html" class="button button--vermas">Ver más</a>
+            </div>
+        </section>
+
+        <!-- Bloque de 3 salados-->
+
+
+        <section class="category-block">
+
+            <div class="recipe-title">
+                <h2 class="recipe-title__inicio">Salados</h2>
+            </div>
+
+            <div class="cards-container">
+
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/melopita.png" alt="Melopita, un dulce griego con alma casera"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Melopita</h3>
+                        <p class="recipe-card__description">Un dulce griego con alma casera</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/Makroud.png" alt="Makroud, dulce tradicional del Magreb"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Makroud</h3>
+                        <p class="recipe-card__description">Tradición dulce del Magreb</p>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="./assetsProyecto/kunefe.png" alt="Künefe, postre crujiente del Medio Oriente"
+                        class="recipe-card__image">
+                    <div class="recipe-card__content">
+                        <h3 class="recipe-card__title">Künefe</h3>
+                        <p class="recipe-card__description">Un crujiente tesoro del Medio Oriente</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="button-container">
+                <a href="./pages/postres.html" class="button button--vermas">Ver más</a>
+            </div>
+
+        </section>
+
+        <!-- Bloque de 2 testimonios -->
+
+
+        <section class="testimonials-block">
+
+            <div class="testimonial-title">
+                <h2 class="testimonial-title">Testimonios</h2>
+            </div>
+
+            <div class="testimonials-container">
+
+                <article class="testimonial-card">
+                    <img src="./assetsProyecto/testimonio1.png" alt="testimonios" class="testimonial-card__image">
+                    <div class="testimonial-card__content">
+                        <h3 class="testimonial-card__author">Rocío Perez</h3>
+                        <p class="testimonial-card__description">"La Cocina de Guille es uno de mis rincones favoritos.
+                            Las
+                            recetas son sinceras, accesibles y llenas
+                            de sabor real. Se nota el amor y la sensibilidad en cada plato. Como entreno a diario,
+                            valoro lo
+                            saludable, pero también lo hecho con alma. ¡El curry de lentejas y el hummus me cambiaron la
+                            semana!"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img src="./assetsProyecto/testimonio2.png" alt="testimonios" class="testimonial-card__image">
+                    <div class="testimonial-card__content">
+                        <h3 class="testimonial-card__author">Sandro Guzman</h3>
+                        <p class="testimonial-card__description">"Pedimos el catering para el cumple de mi esposa y fue
+                            perfecto. Todo llegó impecable, con sabor
+                            casero y presentación de chef. Alejo y Valen amaron el postre de pistachos. Se nota la
+                            pasión y
+                            el
+                            detalle en cada plato. Ideal para quienes buscan salir de lo común."</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="button">
+                <a href="./pages/testimonios.html" class="button button--vermas">Ver más</a>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer-block">
+        <div class="newsletter-footer">
+            <form action="/suscrib" method="get" class="newsletter-form">
+                <h5 class="newsletter-form__title">Suscribite a nuestro newsletter</h5>
+                <label for="email" class="newsletter-form__label">Correo electrónico</label>
+                <input type="email" name="email" id="email" class="newsletter-form__input"
+                    placeholder="Tu correo electrónico">
+                <button type="submit" class="newsletter-form__button button--vermas">Suscribirme</button>
+            </form>
+        </div>
+        <div class="logo--description">
+            <h5>También puedes seguirnos en nuestras redes</h5>
+        </div>
+        <div class="logo-block">
+
+            <div>
+                <ul class="logo--footer">
+                    <li>
+                        <img src="./assetsProyecto/instagram.png" alt="logo de Instagram"
+                            class="logo--footer__red-social">
+                        <a href="#" class="li-link">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="./assetsProyecto/facebook.png" alt="logo de facebook"
+                            class="logo--footer__red-social">
+
+                        <a href="#" class="li-link">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="./assetsProyecto/whatsapp.png" alt="Logo de whatsapp"
+                            class="logo--footer__red-social">
+                        <a href="#" class="li-link">Whatsapp</a>
+                    </li>
+                    <li>
+                        <img src="./assetsProyecto/gorjeo (1).png" alt="Logo de X" class="logo--footer__red-social">
+                        <a href="#" class="li-link">X</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
