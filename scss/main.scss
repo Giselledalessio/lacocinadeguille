@@ -1,0 +1,15 @@
+// base
+@use './base/reset' ;
+@use './base/tipografia';
+
+// componentes
+@use './componentes/button';
+@use './componentes/cards';
+@use './componentes/footer'; 
+@use './componentes/general' ;
+@use './componentes/navbar' ;
+
+//utilities
+@use './utilities/extend' ; 
+@use './utilities/mixins' ;
+@use './utilities/variables';
