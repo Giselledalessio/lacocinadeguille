@@ -1,0 +1,53 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.main-nav {
+    @include mixins.flex(row, space-between, center);
+    padding: variables.$spacing-lg;
+    background-color: variables.$fondo-navbar;
+    width: 100%;
+}
+
+.main-nav__container {
+    @include mixins.flex(row, space-between, center);
+    width: 100%;
+}
+
+.main-nav__logo {
+    width: 50px;
+    height: auto;
+}
+
+.main-nav__toggler {
+    cursor: pointer;
+    padding: variables.$spacing-xs;
+
+    .main-nav__toggler-icon {
+        background-color: variables.$color-primario;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.main-nav__collapse {
+    @include mixins.flex(row, center, center);
+    flex-grow: 1;
+}
+
+.main-nav__list {
+    @include mixins.flex(row, flex-start, center);
+
+    gap: variables.$spacing-xl;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        @include mixins.flex(row, center, center);
+        margin-bottom: variables.$spacing-lg;
+    }
+}
+
+.main-nav__link {
+    text-decoration: none;
+    color: variables.$color-titulo;
+    font-size: variables.$font-size-nav-link;
+    padding: variables.$spacing-xs 0;
+    transition: color 0.3s, text-decoration 0.3s ease;
+}

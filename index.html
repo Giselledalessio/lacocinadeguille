@@ -14,46 +14,44 @@
 
 <body>
     <!-- Inicio del menú -->
-    <header>
+    <header main-header>
         <!-- Inicio de la navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <!-- Variables declaradas propias main-nav , main-nav__XX , button--vermas -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
+            <div class="container-fluid main-nav__container">
                 <!-- Logo -->
-                <img src="./assetsProyecto/guille.png" alt="Logo" class="logo--image">
+                <img src="./assetsProyecto/guille.png" alt="Logo" class="main-nav__logo">
                 <!-- Botón hamburguesa -->
                 <button class="navbar-toggler button--vermas" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon main-nav__toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <!-- Links del menú -->
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar--listado  ">
-                        <li class="li-nav ">
-                            <a href="#" class="li-link nav-link active">Inicio</a>
+                <!-- Links del menú -->
+                <div class="collapse navbar-collapse main-nav__collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 main-nav__list  ">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link nav-link active">Inicio</a>
                         </li>
-                        <li class="li-nav nav-item">
-                            <a href="./pages/postres.html" class="li-link nav-link active"
-                                aria-current="page">Dulce </a>
+                        <li class="main-nav__item nav-item">
+                            <a href="./pages/postres.html" class="main-nav__link nav-link active" aria-current="page">Dulce
+                            </a>
                         </li>
-                        <li class="li-nav nav-item">
-                            <a href="#" class="li-link nav-link active"
-                                aria-current="page">Salado</a>
+                        <li class="main-nav__item nav-item">
+                            <a href="#" class="main-nav__link nav-link active" aria-current="page">Salado</a>
                         </li>
-                        <li class="li-nav nav-item">
-                            <a href="./pages/quienes-somos.html" class="li-link nav-link active"
+                        <li class="main-nav__item nav-item">
+                            <a href="./pages/quienes-somos.html" class="main-nav__link nav-link active"
                                 aria-current="page">Contacto</a>
                         </li>
-                        <li class="li-nav nav-item">
-                            <a href="./pages/quienes-somos.html" class="li-link nav-link active"
+                        <li class="main-nav__item nav-item">
+                            <a href="./pages/quienes-somos.html" class="main-nav__link nav-link active"
                                 aria-current="page">Nosotros</a>
                         </li>
                     </ul>
                     <!-- Búsqueda -->
-                    <form class="d-flex contenedor-nav-search" role="search">
-                        <input class="form-control me-2 d-flex nav-search" type="search" placeholder="Search"
+                    <form class="d-flex contenedor-nav-search main-nav__search-form" role="search">
+                        <input class="form-control me-2 d-flex  main-nav__search-input" type="search" placeholder="Search"
                             aria-label="Search" />
                         <button class="btn btn-outline-success button--vermas" type="submit">Buscar</button>
                     </form>

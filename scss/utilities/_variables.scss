@@ -1,0 +1,30 @@
+// --- Colores ---
+$color-primario: #ED1C24;
+$color-hover: #C2171E;
+$color-titulo: #212121;
+$color-parrafo: #343434;
+$color-secundario: #FAFAFA;
+$fondo-navbar: #E7E7E7;
+$light-white: #FFFFFF; // Blanco puro
+
+// --- Tipografía ---
+$font-family-base: 'Arial', sans-serif;
+$font-family-titles: 'Georgia', serif;
+$font-size-base: 16px;
+$font-size-nav-link: 20px;
+$font-size-hero-title: 3em;
+$font-size-section-title: 2.5em;
+
+// --- Espaciados ---
+$spacing-xxs: 5px;
+$spacing-xs: 10px;
+$spacing-sm: 15px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 50px;
+$spacing-xxl: 80px;
+
+// --- Breakpoints (para Media Queries) ---
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;

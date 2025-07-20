@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +30,71 @@ a {
 
 ul {
   list-style: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #E7E7E7;
+  width: 100%;
+}
+
+.main-nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav__logo {
+  width: 50px;
+  height: auto;
+}
+
+.main-nav__toggler {
+  cursor: pointer;
+  padding: 10px;
+}
+.main-nav__toggler .main-nav__toggler-icon {
+  background-color: #ED1C24;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav__collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #212121;
+  font-size: 20px;
+  padding: 10px 0;
+  transition: color 0.3s, text-decoration 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
