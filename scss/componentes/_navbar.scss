@@ -1,45 +1,74 @@
 @use '../utilities/mixins';
 @use '../utilities/variables';
 
+
 .main-nav {
-    @include mixins.flex(row, space-between, center);
-    padding: variables.$spacing-lg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px variables.$spacing-lg;
     background-color: variables.$fondo-navbar;
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-nav__container {
-    @include mixins.flex(row, space-between, center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .main-nav__logo {
     width: 50px;
     height: auto;
+    display: block;
 }
 
 .main-nav__toggler {
     cursor: pointer;
-    padding: variables.$spacing-xs;
+    padding: 10px;
 
     .main-nav__toggler-icon {
-        background-color: variables.$color-primario;
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: variables.$color-titulo;
+        position: relative;
         transition: background-color 0.3s ease;
+
+
     }
 }
 
 .main-nav__collapse {
-    @include mixins.flex(row, center, center);
+    display: flex;
     flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+
+    }
 }
 
 .main-nav__list {
-    @include mixins.flex(row, flex-start, center);
-
+    display: flex;
+    list-style: none;
     gap: variables.$spacing-xl;
+    margin: 0;
+    padding: 0;
 
     @media (max-width: variables.$breakpoint-tablet) {
-        @include mixins.flex(row, center, center);
+        flex-direction: column;
+        gap: variables.$spacing-sm;
+        width: 100%;
+        text-align: center;
         margin-bottom: variables.$spacing-lg;
     }
 }
@@ -49,5 +78,71 @@
     color: variables.$color-titulo;
     font-size: variables.$font-size-nav-link;
     padding: variables.$spacing-xs 0;
-    transition: color 0.3s, text-decoration 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+    &:hover {
+        color: variables.$color-hover;
+        text-decoration: underline;
+    }
+    &--active {
+        color: variables.$color-primario;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.main-nav__search-form {
+    display: flex;
+    align-items: center;
+    gap: variables.$spacing-xs;
+    margin-left: variables.$spacing-lg;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        gap: variables.$spacing-xs;
+        padding: variables.$spacing-md;
+    }
+}
+
+.main-nav__search-input {
+    width: 300px;
+    padding: variables.$spacing-xs variables.$spacing-sm;
+    border: 1px solid variables.$color-parrafo;
+    border-radius: 5px;
+
+
+    &:focus  {
+        border-color: variables.$color-primario ;
+        box-shadow: 0 0 0 3px rgba(variables.$color-primario, 0.2) !important;
+    }
+    &:active {
+        border-color: variables.$color-primario  ;
+    }
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        width: 100%;
+    }
+}
+
+
+
+//secondary nav 
+
+.secondarynav--image {
+    background-image: url("../assetsProyecto/secondaryNav.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.secondarynav--texto {
+    color: #fafafa;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    background-color: opacity($color: #FAFAFA);
 }

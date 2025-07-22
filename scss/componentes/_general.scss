@@ -1,0 +1,36 @@
+.secondarynav--image {
+    background-image: url("../assetsProyecto/secondaryNav.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secondarynav--texto {
+    color: #fafafa;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+/* Presentación */
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.presentacion--image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,87 @@
+@use '../utilities/variables';
+
+
+
+
+.category-block{
+    border: 1px solid variables.$color-parrafo;
+    border-radius: 8px;
+    padding: variables.$spacing-md;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    background-color: variables.$color-secundario;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.recipe-card {
+    @extend .category-block;
+    text-align: center;
+    margin-bottom: variables.$spacing-lg;
+
+    &__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: variables.$spacing-md;
+    }
+
+    &__content {
+        padding: variables.$spacing-sm;
+    }
+
+    &__title {
+        font-size: 1.5em;
+        margin-bottom: variables.$spacing-xs;
+        color: variables.$color-titulo;
+    }
+
+    &__description {
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin-bottom: variables.$spacing-md;
+    }
+}
+
+.testimonial-card {
+    @extend .category-block;
+    text-align: center;
+    margin-bottom: variables.$spacing-lg;
+
+    &__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto variables.$spacing-md;
+        border: 3px solid variables.$color-primario;
+    }
+
+    &__text {
+        font-style: italic;
+        margin-bottom: variables.$spacing-sm;
+    
+    }
+}
+
+.category-block {
+    margin-top: variables.$spacing-xxl;
+    text-align: center; 
+    h2 {
+        margin-bottom: variables.$spacing-xl;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: variables.$spacing-lg;
+        margin-top: variables.$spacing-md;
+    }
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        .cards-container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
