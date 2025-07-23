@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- aos -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +20,7 @@
     <header main-header>
         <!-- Inicio de la navbar -->
         <!-- Variables declaradas propias main-nav , main-nav__XX , button--vermas -->
-         <!-- Consultar porqué los anchor de la lista no toma los estilos que le aplique -->
+        <!-- Consultar porqué los anchor de la lista no toma los estilos que le aplique -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
             <div class="container-fluid main-nav__container">
                 <!-- Logo -->
@@ -43,7 +43,8 @@
                             </a>
                         </li>
                         <li class="main-nav__item nav-item">
-                            <a href="./pages/nosotros.html" class="main-nav__link nav-link active" aria-current="page">Nosotros</a>
+                            <a href="./pages/nosotros.html" class="main-nav__link nav-link active"
+                                aria-current="page">Nosotros</a>
                         </li>
                         <li class="main-nav__item nav-item">
                             <a href="./pages/contacto.html" class="main-nav__link nav-link active"
@@ -58,7 +59,8 @@
                     <form class="d-flex contenedor-nav-search main-nav__search-form" role="search">
                         <input class="form-control me-2 d-flex  main-nav__search-input" type="search"
                             placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success button--vermas button--secondary" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success button--vermas button--secondary"
+                            type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -82,8 +84,7 @@
 
     <main>
         <div class="presentacion">
-            <div class="presentacion--title" data-aos="fade-right"data-aos-offset="400"
-     data-aos-easing="ease-in-sine">
+            <div class="presentacion--title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h1>
                     La cocina de Guille
                 </h1>
@@ -91,11 +92,11 @@
                     Caterers & Private Cheff
                 </h2>
                 <div class="presentacion--button">
-                    <a href="/pages/quienes-somos.html" class="button--primary button--quienessomos">Quiénes somos</a>
+                    <a href="./pages/nosotros.html" class="button--primary button--quienessomos">Quiénes somos</a>
                 </div>
             </div>
             <div class="presentacion--image-container" data-aos="fade-left" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine" >
                 <img src="./assetsProyecto/amasado.png" alt="amasado de masa" class="presentacion--image">
             </div>
         </div>
@@ -110,7 +111,7 @@
                 <h2 class="recipe-title__inicio">Postres</h2>
             </div>
 
-            <div class="cards-container">
+            <div class="cards-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                 <article class="recipe-card">
                     <img src="./assetsProyecto/melopita.png" alt="Melopita, un dulce griego con alma casera"
                         class="recipe-card__image">
@@ -120,7 +121,7 @@
                     </div>
                 </article>
 
-                <article class="recipe-card">
+                <article class="recipe-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                     <img src="./assetsProyecto/Makroud.png" alt="Makroud, dulce tradicional del Magreb"
                         class="recipe-card__image">
                     <div class="recipe-card__content">
@@ -129,7 +130,7 @@
                     </div>
                 </article>
 
-                <article class="recipe-card">
+                <article class="recipe-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                     <img src="./assetsProyecto/kunefe.png" alt="Künefe, postre crujiente del Medio Oriente"
                         class="recipe-card__image">
                     <div class="recipe-card__content">
@@ -156,7 +157,7 @@
 
             <div class="cards-container">
 
-                <article class="recipe-card">
+                <article class="recipe-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                     <img src="./assetsProyecto/melopita.png" alt="Melopita, un dulce griego con alma casera"
                         class="recipe-card__image">
                     <div class="recipe-card__content">
@@ -165,7 +166,7 @@
                     </div>
                 </article>
 
-                <article class="recipe-card">
+                <article class="recipe-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                     <img src="./assetsProyecto/Makroud.png" alt="Makroud, dulce tradicional del Magreb"
                         class="recipe-card__image">
                     <div class="recipe-card__content">
@@ -174,7 +175,7 @@
                     </div>
                 </article>
 
-                <article class="recipe-card">
+                <article class="recipe-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                     <img src="./assetsProyecto/kunefe.png" alt="Künefe, postre crujiente del Medio Oriente"
                         class="recipe-card__image">
                     <div class="recipe-card__content">
@@ -243,16 +244,16 @@
     <footer>
         <p>&copy; 2025 Recetas de Guille. Todos los derechos reservados.</p>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
-<!-- aos -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
