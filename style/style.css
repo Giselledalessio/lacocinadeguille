@@ -444,8 +444,8 @@ footer p {
   margin-bottom: 50px;
 }
 .about-section__image {
-  width: 250px;
-  height: Auto;
+  width: 300px;
+  height: autopx;
   border-radius: 8px;
   object-fit: cover;
   margin-bottom: 30px;
@@ -467,6 +467,26 @@ footer p {
   }
   .about-section__text {
     font-size: 1em;
+  }
+}
+
+.testimonials-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.testimonials-section h2 {
+  margin-bottom: 50px;
+}
+.testimonials-section .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+@media (max-width: 560px) {
+  .testimonials-section .testimonials-grid {
+    grid-template-columns: 1fr;
   }
 }
 

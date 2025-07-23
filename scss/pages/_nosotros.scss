@@ -14,8 +14,8 @@
     }
 
     &__image {
-        width: 250px;
-        height: Auto;
+        width: 300px;
+        height: autopx;
         border-radius: 8px;
         object-fit: cover;
         margin-bottom: variables.$spacing-lg;

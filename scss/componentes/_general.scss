@@ -16,6 +16,8 @@
 }
 
 /* Presentación */
+
+
 .presentacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -24,6 +26,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
+
 }
 
 .presentacion--image {

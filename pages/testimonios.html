@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Testimonios - La cocina de Guille</title>
 </head>
 
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
             <div class="container-fluid main-nav__container">
                 <!-- Logo -->
-                <img src="./assetsProyecto/guille.png" alt="Logo" class="main-nav__logo">
+                <img src="../assetsProyecto/guille.png" alt="Logo" class="main-nav__logo">
                 <!-- Botón hamburguesa -->
                 <button class="navbar-toggler button--vermas" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,23 +35,22 @@
                 <div class="collapse navbar-collapse main-nav__collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 main-nav__list  ">
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link nav-link active">Inicio</a>
+                            <a href="../index.html" class="main-nav__link nav-link active">Inicio</a>
                         </li>
                         <li class="main-nav__item nav-item">
-                            <a href="./pages/postres.html" class="main-nav__link nav-link active"
-                                aria-current="page">Dulce
-                            </a>
+                            <a href="./recetas.html" class="main-nav__link nav-link active"
+                                aria-current="page">recetas</a>
                         </li>
                         <li class="main-nav__item nav-item">
-                            <a href="#" class="main-nav__link nav-link active" aria-current="page">Salado</a>
-                        </li>
-                        <li class="main-nav__item nav-item">
-                            <a href="./pages/quienes-somos.html" class="main-nav__link nav-link active"
-                                aria-current="page">Contacto</a>
-                        </li>
-                        <li class="main-nav__item nav-item">
-                            <a href="./pages/quienes-somos.html" class="main-nav__link nav-link active"
+                            <a href="./nosotros.html" class="main-nav__link nav-link active"
                                 aria-current="page">Nosotros</a>
+                        </li>
+                        <li class="main-nav__item nav-item">
+                            <a href="./contacto.html" class="main-nav__link nav-link active" aria-current="page">Contacto</a>
+                        </li>
+                        <li class="main-nav__item nav-item">
+                            <a href="#" class="main-nav__link nav-link active"
+                                aria-current="page">Testimonios</a>
                         </li>
                     </ul>
                     <!-- Búsqueda -->
@@ -64,38 +63,32 @@
                 </div>
             </div>
         </nav>
-
-
-
-        <!-- secondary nav -->
-        <nav class="navbar navbar-light bg-light justify-content-center d-flex secondarynav--image">
-            <a class="navbar-brand secondarynav--texto">¿Qué querés comer hoy?</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 d-flex nav-search main-nav__search-input" type="search"
-                    placeholder="Search" aria-label="Search" />
-            </form>
-        </nav>
-
     </header>
 
 
     <main>
-         <section id="testimonios" class="testimonials-section">
-            <h2>Lo que Dicen Nuestros Usuarios</h2>
+        <section class="testimonials-section">
+            <h2>Lo que opinan Nuestros Usuarios</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <img src="../assets/user1.jpg" alt="Foto de Usuario 1" class="testimonial-card__image">
-                    <p class="testimonial-card__text">"¡Las recetas de Guille son increíbles! Sencillas de seguir y siempre con resultados deliciosos. Mi familia está encantada."</p>
+                    <img src="../assetsProyecto/testimonio1.png" alt="Foto de Usuario 1"
+                        class="testimonial-card__image">
+                    <p class="testimonial-card__text">"¡Las recetas de Guille son increíbles! Sencillas de seguir y
+                        siempre con resultados deliciosos. Mi familia está encantada."</p>
                     <p class="testimonial-card__author">- María P.</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="../assets/user2.jpg" alt="Foto de Usuario 2" class="testimonial-card__image">
-                    <p class="testimonial-card__text">"Nunca pensé que cocinar fuera tan divertido hasta que descubrí este blog. ¡Totalmente recomendado para todos los niveles!"</p>
+                    <img src="../assetsProyecto/testimonio2.png" alt="Foto de Usuario 2"
+                        class="testimonial-card__image">
+                    <p class="testimonial-card__text">"Nunca pensé que cocinar fuera tan divertido hasta que descubrí
+                        este blog. ¡Totalmente recomendado para todos los niveles!"</p>
                     <p class="testimonial-card__author">- Juan C.</p>
                 </div>
                 <div class="testimonial-card">
-                    <img src="../assets/user3.jpg" alt="Foto de Usuario 3" class="testimonial-card__image">
-                    <p class="testimonial-card__text">"Recetas claras, ingredientes fáciles de conseguir y un toque personal que las hace únicas. ¡Gracias, Guille!"</p>
+                    <img src="../assetsProyecto/testimonio3.png" alt="Foto de Usuario 3"
+                        class="testimonial-card__image">
+                    <p class="testimonial-card__text">"Recetas claras, ingredientes fáciles de conseguir y un toque
+                        personal que las hace únicas. ¡Gracias, Guille!"</p>
                     <p class="testimonial-card__author">- Sofía R.</p>
                 </div>
             </div>
