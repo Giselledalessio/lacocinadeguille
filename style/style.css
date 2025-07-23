@@ -540,4 +540,26 @@ footer p {
   margin-top: 20px;
 }
 
+.recetas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.recetas-section {
+  margin: 80px;
+  text-align: center;
+}
+.recetas-section h2 {
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+@media (max-width: 560px) {
+  .recetas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
