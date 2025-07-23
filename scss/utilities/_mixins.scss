@@ -1,9 +1,24 @@
  // mixin + nombre + argumento + llaves --> Esto se añade en donde se necesita con @include nombreMixin ()
 
-@mixin flex($direction, $justify, $align) {
+
+ // flexibilidad para centro 
+
+@mixin flex-centro($direction: row) {
     display: flex;
     flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+    justify-content: center;
+    align-items: center;
+}
 
+
+// mixin para la sombra
+@mixin box-shadow($x-offset, $y-offset, $blur, $spread, $color) {
+    box-shadow: $x-offset $y-offset $blur $spread $color;
+} 
+
+
+// transiciones 
+
+@mixin transiciones($property, $duration, $timing-function) {
+    transition: $property $duration $timing-function;
 }

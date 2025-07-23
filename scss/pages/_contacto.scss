@@ -1,0 +1,59 @@
+@use '../utilities/variables' ;
+
+// Estilos específicos para la página "Contacto"
+@use "../base/variables";
+
+.contact-form-section {
+    margin-top: variables.$spacing-xxl;
+    margin-bottom: variables.$spacing-xxl;
+    padding: variables.$spacing-lg variables.$spacing-md;
+    background-color: variables.$color-secundario;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    h1 {
+        text-align: center;
+        margin-bottom: variables.$spacing-xl;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: variables.$spacing-md;
+        max-width: 600px;
+        margin: 0 auto;
+
+        label {
+            display: block;
+            margin-bottom: variables.$spacing-xs;
+            font-weight: bold;
+            color: variables.$color-titulo;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: variables.$spacing-sm;
+            border: 1px solid variables.$color-parrafo;
+            border-radius: 5px;
+            font-size: variables.$font-size-base;
+            &:focus {
+                border-color: variables.$color-primario;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(variables.$color-primario, 0.2);
+            }
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .button--primary {
+            width: 100%;
+            margin-top: variables.$spacing-md;
+        }
+    }
+}
+

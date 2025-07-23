@@ -1,0 +1,26 @@
+@use "../utilities/variables" ;
+
+
+.recetas-grid {
+    display: grid;
+    grid-template-columns:  1fr ;
+    gap: variables.$spacing-lg;
+    margin-top: variables.$spacing-xl;
+}
+
+
+.recetas-section {
+    margin: variables.$spacing-xxl;
+    text-align: center;
+    
+    h2 {
+        margin-bottom: variables.$spacing-xl;
+        margin-top: variables.$spacing-xxl;
+    }
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+    .recetas-grid {
+        grid-template-columns: 1fr;
+    }
+}

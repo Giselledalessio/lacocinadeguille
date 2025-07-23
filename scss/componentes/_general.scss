@@ -1,11 +1,11 @@
+@use "../utilities/mixins" ;
+
 .secondarynav--image {
     background-image: url("../assetsProyecto/secondaryNav.png");
     background-size: cover;
     background-position: center;
     min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex-centro;
 
 }
 

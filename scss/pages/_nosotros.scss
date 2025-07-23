@@ -1,0 +1,42 @@
+// Estilos específicos para la página "Nosotros"
+@use "../utilities/variables";
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: variables.$spacing-xl 0;
+    margin-top: variables.$spacing-xl;
+
+    h1 {
+        margin-bottom: variables.$spacing-xl;
+    }
+
+    &__image {
+        width: 250px;
+        height: Auto;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: variables.$spacing-lg;
+        border: 4px solid variables.$color-primario;
+    }
+
+    &__text {
+        max-width: 800px;
+        font-size: 1.1em;
+        line-height: 1.7;
+        margin-bottom: variables.$spacing-md;
+    }
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        padding: variables.$spacing-lg 0;
+        &__image {
+            width: 200px;
+            height: 200px;
+        }
+        &__text {
+            font-size: 1em;
+        }
+    }
+}

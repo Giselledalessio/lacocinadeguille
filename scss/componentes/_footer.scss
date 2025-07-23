@@ -1,7 +1,8 @@
 @use '../utilities/variables';
+@use '../utilities/mixins';
 
 footer {
-    display: flex; 
+    display: flex;
     background-color: variables.$color-titulo;
     color: variables.$color-secundario;
     padding: variables.$spacing-lg variables.$spacing-md;
@@ -24,11 +25,23 @@ footer {
 
 }
 
-.logo--footer {
+
+
+.rrss-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     gap: 15px;
+    align-items: center;
+    text-align: center;
+    color: #FAFAFA;
+    height: auto;
 }
 
 .logo--footer__red-social {
-    width: 28px;
-    height: 28px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 15px;
+    flex-wrap: wrap;
 }

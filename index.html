@@ -20,6 +20,7 @@
     <header main-header>
         <!-- Inicio de la navbar -->
         <!-- Variables declaradas propias main-nav , main-nav__XX , button--vermas -->
+         <!-- Consultar porqué los anchor de la lista no toma los estilos que le aplique -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
             <div class="container-fluid main-nav__container">
                 <!-- Logo -->
@@ -57,7 +58,7 @@
                     <form class="d-flex contenedor-nav-search main-nav__search-form" role="search">
                         <input class="form-control me-2 d-flex  main-nav__search-input" type="search"
                             placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success button--vermas" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success button--vermas button--secondary" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -81,7 +82,7 @@
 
     <main>
         <div class="presentacion">
-            <div class="presentacion--title" data-aos="fade-right"data-aos-offset="300"
+            <div class="presentacion--title" data-aos="fade-right"data-aos-offset="400"
      data-aos-easing="ease-in-sine">
                 <h1>
                     La cocina de Guille
@@ -90,7 +91,7 @@
                     Caterers & Private Cheff
                 </h2>
                 <div class="presentacion--button">
-                    <a href="/pages/quienes-somos.html" class="button button--quienessomos">Quiénes somos</a>
+                    <a href="/pages/quienes-somos.html" class="button--primary button--quienessomos">Quiénes somos</a>
                 </div>
             </div>
             <div class="presentacion--image-container" data-aos="fade-left" data-aos-offset="300"
@@ -140,7 +141,7 @@
             </div>
 
             <div class="button-container">
-                <a href="./pages/postres.html" class="button button--vermas">Ver más</a>
+                <a href="./pages/postres.html" class="button--secondary button--vermas">Ver más</a>
             </div>
         </section>
 
@@ -185,7 +186,7 @@
             </div>
 
             <div class="button-container">
-                <a href="./pages/postres.html" class="button button--vermas">Ver más</a>
+                <a href="./pages/postres.html" class="button--secondary button--vermas">Ver más</a>
             </div>
 
         </section>
@@ -230,8 +231,8 @@
 
             </div>
 
-            <div class="button">
-                <a href="./pages/testimonios.html" class="button button--vermas">Ver más</a>
+            <div class="button-container">
+                <a href="./pages/testimonios.html" class="button--secondary button--vermas">Ver más</a>
             </div>
 
         </section>
@@ -240,34 +241,9 @@
     </main>
 
     <footer>
-
-        <div>
-            <h5>Nuestras redes</h5>
-        </div>
-
-        <div>
-            <ul class="logo--footer">
-                <li>
-                    <img src="./assetsProyecto/instagram.png" alt="logo de Instagram" class="logo--footer__red-social">
-                    <a href="#" class="li-link">Instagram</a>
-                </li>
-                <li>
-                    <img src="./assetsProyecto/facebook.png" alt="logo de facebook" class="logo--footer__red-social">
-
-                    <a href="#" class="li-link">Facebook</a>
-                </li>
-                <li>
-                    <img src="./assetsProyecto/whatsapp.png" alt="Logo de whatsapp" class="logo--footer__red-social">
-                    <a href="#" class="li-link">Whatsapp</a>
-                </li>
-                <li>
-                    <img src="./assetsProyecto/gorjeo (1).png" alt="Logo de X" class="logo--footer__red-social">
-                    <a href="#" class="li-link">X</a>
-                </li>
-            </ul>
-        </div>
-
+        <p>&copy; 2025 Recetas de Guille. Todos los derechos reservados.</p>
     </footer>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">

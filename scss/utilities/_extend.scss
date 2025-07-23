@@ -1,0 +1,65 @@
+@use "../utilities/variables";
+
+//base del botón 
+
+.button-base {
+    display: inline-block;
+    padding: variables.$spacing-sm variables.$spacing-lg;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: variables.$font-size-base;
+}
+
+// Botón primario con la extensión del botón base 
+
+.button--primary {
+    @extend .button-base;
+    background-color: variables.$color-primario;
+    color: variables.$light-white;
+    border: 2px solid variables.$color-primario;
+
+    &:hover {
+        background-color: variables.$light-white;
+        border-color: variables.$color-hover;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+// imagen responsiva con un poco de curva 
+
+.responsive-imagen-container {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+// Bloque de categoría  --> Le da el borde , redondea 8px, le da la sombra
+// lo hace flexible en dirección de columna 
+
+.category-block-extend{
+    border: 1px solid variables.$color-parrafo;
+    border-radius: 8px;
+    padding: variables.$spacing-md;
+    box-shadow: 5px 3px 6px 6px rgba(0, 0, 0, 0.08);
+    background-color: variables.$color-secundario;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+//espacio de bloque --> Espacio arriba, abajo y alinea el texto
+
+.spacing-block {
+    margin-top: variables.$spacing-xxl;
+    margin-bottom: variables.$spacing-xxl;
+    text-align: center;
+}

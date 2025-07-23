@@ -3,19 +3,17 @@
 
 
 .main-nav {
-    display: flex;
+    @include mixins.flex-centro(row);
     justify-content: space-between;
-    align-items: center;
     padding: 15px variables.$spacing-lg;
     background-color: variables.$fondo-navbar;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    @include mixins.box-shadow(0, 2px, 5px, 0, rgba(0, 0, 0, 0.1));
 }
 
 .main-nav__container {
-    display: flex;
+    @include mixins.flex-centro(row);
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
@@ -35,7 +33,7 @@
         height: 2px;
         background-color: variables.$color-titulo;
         position: relative;
-        transition: background-color 0.3s ease;
+        @include mixins.transiciones(background-color, 0.3s, ease);
 
 
     }
@@ -78,7 +76,8 @@
     color: variables.$color-titulo;
     font-size: variables.$font-size-nav-link;
     padding: variables.$spacing-xs 0;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    @include mixins.transiciones(color, 0.3s, ease);
+    @include mixins.transiciones(text-decoration, 0.3s, ease);
 
     &:hover {
         color: variables.$color-hover;
@@ -115,7 +114,7 @@
 
     &:focus  {
         border-color: variables.$color-primario ;
-        box-shadow: 0 0 0 3px rgba(variables.$color-primario, 0.2) !important;
+        @include mixins.box-shadow(0, 0, 0, 3px, rgba(variables.$color-primario, 0.2));
     }
     &:active {
         border-color: variables.$color-primario  ;

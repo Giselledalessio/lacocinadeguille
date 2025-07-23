@@ -1,32 +1,6 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
 
-.button-base {
-    display: inline-block;
-    padding: variables.$spacing-sm variables.$spacing-lg;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-size: variables.$font-size-base;
-}
-
-.button--primary {
-    @extend .button-base;
-    background-color: variables.$color-primario;
-    color: variables.$light-white;
-    border: 2px solid variables.$color-primario;
-
-    &:hover {
-        background-color: variables.$color-hover;
-        border-color: variables.$color-hover;
-        transform: translateY(-2px);
-    }
-    &:active {
-        transform: translateY(0);
-    }
-}
 
 .button--secondary {
     @extend .button-base;

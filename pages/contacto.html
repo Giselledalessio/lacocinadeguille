@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css">
-    <title>Recetas - La cocina de Guille</title>
+    <title>Contacto - La cocina de Guille</title>
 </head>
 
 <body>
@@ -64,83 +64,33 @@
                 </div>
             </div>
         </nav>
+    </header>
+
+    <!-- Cuerpo del sitio  -->
 
     <main>
-        <div>
-            <h1>Todas Nuestras Recetas</h1>
-        </div>
-
-
-        <section class="recetas-section">
-           
-                <h2>Recetas Dulces</h2>
-            
-
-            <div class="recetas-grid">
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/tarta-de-manzana.jpg" alt="Receta de Tarta de Manzana" class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Tarta de Manzana Clásica</h3>
-                        <p class="recipe-card__description">Una tarta deliciosa y fácil de preparar, ideal para
-                            cualquier ocasión.</p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
+        <section class="contact-form-section">
+            <h1>Contáctanos</h1>
+            <form class="contact-form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/torta-de-chocolate.jpg" alt="Receta de Torta de Chocolate"
-                        class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Torta Húmeda de Chocolate</h3>
-                        <p class="recipe-card__description">El postre perfecto para los amantes del chocolate, fácil y
-                            delicioso.</p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/brownie.jpg" alt="Receta de Brownies" class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Brownies con Nueces</h3>
-                        <p class="recipe-card__description">Un clásico irresistible, con un toque crujiente de nueces.
-                        </p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                 </div>
-            </div>
+                <button type="submit" class="button--primary">Enviar Mensaje</button>
+            </form>
         </section>
 
-        <section class="recetas-section">
-                <h2 >Recetas Saladas</h2>
-            <div class="recetas-grid">
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/pollo-al-horno.jpg" alt="Receta de Pollo al Horno" class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Pollo al Horno con Hierbas</h3>
-                        <p class="recipe-card__description">Jugoso pollo al horno con un toque de hierbas aromáticas.
-                        </p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
-                </div>
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/ensalada-fresca.jpg" alt="Receta de Ensalada Fresca" class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Ensalada Mediterránea</h3>
-                        <p class="recipe-card__description">Una ensalada refrescante y saludable con ingredientes
-                            mediterráneos.</p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
-                </div>
-                <div class="recipe-card">
-                    <img src="../assetsProyecto/pizza-casera.jpg" alt="Receta de Pizza Casera" class="recipe-card__image">
-                    <div class="recipe-card__content">
-                        <h3 class="recipe-card__title">Pizza Casera al Estilo Napolitano</h3>
-                        <p class="recipe-card__description">La mejor pizza hecha en casa, con una masa perfecta y
-                            ingredientes frescos.</p>
-                        <a href="#" class="button--secondary">Ver Receta</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
+
 
     <footer>
         <p>&copy; 2025 Recetas de Guille. Todos los derechos reservados.</p>
