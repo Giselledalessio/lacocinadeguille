@@ -1,7 +1,7 @@
 @use '../utilities/variables' ;
 
 // Estilos específicos para la página "Contacto"
-@use "../base/variables";
+
 
 .contact-form-section {
     margin-top: variables.$spacing-xxl;
@@ -56,4 +56,3 @@
         }
     }
 }
-
