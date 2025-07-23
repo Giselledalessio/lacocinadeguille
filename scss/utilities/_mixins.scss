@@ -22,18 +22,3 @@
 @mixin transiciones($property, $duration, $timing-function) {
     transition: $property $duration $timing-function;
 }
-
-//botón base 
-
-.button-base {
-    display: inline-block;
-    padding: variables.$spacing-sm variables.$spacing-lg;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    font-size: variables.$font-size-base;
-}
-
