@@ -1,15 +1,6 @@
  // mixin + nombre + argumento + llaves --> Esto se añade en donde se necesita con @include nombreMixin ()
 
 
- // flexibilidad para centro 
-
-// @mixin flex-centro($direction: row) {
-//     display: flex;
-//     flex-direction: $direction;
-//     justify-content: center;
-//     align-items: center;
-// }
-
 // mixin más reemplazable
 @mixin flex-setup($direction: row, $justify: center, $align: center, $wrap: nowrap) {
   display: flex;
