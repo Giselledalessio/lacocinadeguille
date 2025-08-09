@@ -1,4 +1,5 @@
 @use '../utilities/variables';
+@use "../utilities/mixins";
 
 .testimonials-section {
     margin-top: variables.$spacing-xxl;
@@ -11,9 +12,7 @@
     }
 
     .testimonials-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: variables.$spacing-lg;
+        @include mixins.grid(repeat((300px, 1fr)), variables.$spacing-lg);
     }
 
     @media (max-width: variables.$breakpoint-mobile) {

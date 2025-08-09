@@ -17,3 +17,18 @@
 .button--vermas {
     @extend .button--primary;
 }
+.button--primary {
+    @extend .button-base;
+    background-color: variables.$color-primario;
+    color: variables.$light-white;
+    border: 2px solid variables.$color-primario;
+
+    &:hover {
+        background-color: variables.$color-hover;
+        border-color: variables.$color-hover;
+        transform: translateY(-2px);
+    }
+    &:active {
+        transform: translateY(0);
+    }
+}

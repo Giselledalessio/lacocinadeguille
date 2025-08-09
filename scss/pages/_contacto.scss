@@ -1,4 +1,5 @@
 @use '../utilities/variables' ;
+@use "../utilities/mixins";
 
 // Estilos específicos para la página "Contacto"
 
@@ -17,9 +18,7 @@
     }
 
     .contact-form {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: variables.$spacing-md;
+        @include mixins.grid(1fr, variables.$spacing-md);
         max-width: 600px;
         margin: 0 auto;
 

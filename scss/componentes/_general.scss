@@ -1,11 +1,12 @@
-@use "../utilities/mixins" ;
+@use "../utilities/mixins";
+@use "../utilities/variables";
 
 .secondarynav--image {
     background-image: url("../assetsProyecto/secondaryNav.png");
     background-size: cover;
     background-position: center;
     min-height: 100px;
-    @include mixins.flex-centro;
+     @include mixins.flex-setup(row, center, center);
 
 }
 
@@ -19,14 +20,17 @@
 
 
 .presentacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    @include mixins.grid(repeat(2, 1fr), variables.$spacing-xl);
     padding: 16px;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
 
+
+    @media (max-width: variables.$breakpoint-tablet) {
+    grid-template-columns: 1fr ; 
+    text-align: center;
+  }
 }
 
 .presentacion--image {
@@ -35,5 +39,3 @@
     border-radius: 8px;
     object-fit: cover;
 }
-
-

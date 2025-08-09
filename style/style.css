@@ -94,7 +94,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.button-base, .button--secondary, .button--primary, .button--vermas {
+.button-base, .button--secondary, .button--primary, .button--vermas, .button--primary {
   display: inline-block;
   padding: 15px 30px;
   border-radius: 5px;
@@ -135,6 +135,9 @@ a:hover {
   background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   overflow: hidden;
 }
 
@@ -152,6 +155,20 @@ a:hover {
 .button--secondary:hover {
   background-color: #ED1C24;
   color: #FFFFFF;
+}
+
+.button--primary, .button--vermas {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+  border: 2px solid #ED1C24;
+}
+.button--primary:hover, .button--vermas:hover {
+  background-color: #C2171E;
+  border-color: #C2171E;
+  transform: translateY(-2px);
+}
+.button--primary:active, .button--vermas:active {
+  transform: translateY(0);
 }
 
 .recipe-card {
@@ -201,7 +218,7 @@ a:hover {
 }
 .category-block .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 20px;
 }
@@ -263,6 +280,7 @@ footer p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .secondarynav--texto {
@@ -274,12 +292,18 @@ footer p {
 /* Presentación */
 .presentacion {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
   padding: 16px;
   align-items: center;
   text-align: center;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .presentacion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 .presentacion--image {
@@ -290,11 +314,6 @@ footer p {
 }
 
 .main-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
   padding: 15px 30px;
   background-color: #E7E7E7;
   width: 100%;
@@ -304,9 +323,9 @@ footer p {
 .main-nav__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -435,7 +454,9 @@ footer p {
 .about-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   text-align: center;
   padding: 50px 0;
   margin-top: 50px;
@@ -481,7 +502,7 @@ footer p {
 }
 .testimonials-section .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(300px, 1fr);
   gap: 30px;
 }
 @media (max-width: 560px) {
@@ -557,6 +578,9 @@ footer p {
 }
 
 @media (max-width: 560px) {
+  .recetas-section {
+    margin: 10px;
+  }
   .recetas-grid {
     grid-template-columns: 1fr;
   }

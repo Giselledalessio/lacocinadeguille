@@ -1,10 +1,9 @@
 @use "../utilities/variables" ;
+@use "../utilities/mixins";
 
 
 .recetas-grid {
-    display: grid;
-    grid-template-columns:  1fr ;
-    gap: variables.$spacing-lg;
+    @include mixins.grid(1fr, variables.$spacing-lg);
     margin-top: variables.$spacing-xl;
 }
 
@@ -20,6 +19,9 @@
 }
 
 @media (max-width: variables.$breakpoint-mobile) {
+    .recetas-section{
+        margin: variables.$spacing-xs;
+    }
     .recetas-grid {
         grid-template-columns: 1fr;
     }

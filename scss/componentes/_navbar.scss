@@ -3,8 +3,6 @@
 
 
 .main-nav {
-    @include mixins.flex-centro(row);
-    justify-content: space-between;
     padding: 15px variables.$spacing-lg;
     background-color: variables.$fondo-navbar;
     width: 100%;
@@ -12,8 +10,7 @@
 }
 
 .main-nav__container {
-    @include mixins.flex-centro(row);
-    justify-content: space-between;
+    @include mixins.flex-setup(row, space-between, center);
     width: 100%;
 }
 
